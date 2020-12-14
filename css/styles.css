@@ -212,6 +212,7 @@ header {
 /* Section Team */
 
 .section-team {
+  background-color: #f5f4fa;
   position: absolute;
   width: 1600px;
   height: 500px;
@@ -223,22 +224,26 @@ header {
 .section-team ul {
   position: absolute;
   width: 1600px;
-  height: 368px;
+  height: 400px;
   display: flex;
   justify-content: center;
   margin-top: 35px;
   list-style-type: none;
 }
 .section-team ul li {
+  background-color: #ffffff;
   margin: 15px;
   justify-content: center;
 }
 .section-team ul li img {
+  margin-bottom: 15px;
   width: 270px;
   height: 260px;
 }
 
 .section-team ul li h3 {
+  margin-top: 15px;
+  margin: 5px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -250,6 +255,7 @@ header {
 }
 
 .section-team ul li p {
+  margin: 15px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -266,7 +272,7 @@ footer {
   width: 1600px;
   height: 252px;
   left: 0px;
-  top: 1900px;
+  top: 1950px;
   background-color: #2f303a;
 }
 
