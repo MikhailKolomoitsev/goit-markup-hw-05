@@ -212,4 +212,22 @@ header {
 /* Section Team */
 
 .section-team {
+  position: absolute;
+  width: 1600px;
+  height: 500px;
+  left: 0px;
+  top: 1449px;
+}
+
+.section-team ul {
+  position: absolute;
+  width: 1170px;
+  height: 368px;
+  left: 215px;
+  top: 1635px;
+  display: flex;
+}
+.section-team ul li img {
+  width: 270px;
+  height: 260px;
 }
