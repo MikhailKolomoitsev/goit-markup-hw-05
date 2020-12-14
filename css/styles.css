@@ -88,6 +88,9 @@ header {
   left: 453px;
   top: 32px;
 }
+.navbar1 a:hover {
+  color: #2196f3;
+}
 
 .navbar1 ul {
   text-decoration: none;
@@ -115,7 +118,9 @@ header {
   display: flex;
   justify-content: space-around;
 }
-
+.contactsnav a:hover {
+  color: #000000;
+}
 /* Offer section */
 
 .section-offer {
@@ -276,6 +281,9 @@ footer {
   background-color: #2f303a;
 }
 
+.imgfoooter {
+  margin-bottom: 20px;
+}
 .footer-contacts {
   margin: 60px 215px;
 }
@@ -287,5 +295,9 @@ footer {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+footer a:hover {
   color: #ffffff;
 }
