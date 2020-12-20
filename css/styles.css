@@ -105,7 +105,7 @@ header {
   left: 453px;
   top: 25px;
 }
-.navbar1 a:hover {
+.studiobuttonhover:hover {
   color: #2196f3;
 }
 
@@ -124,6 +124,10 @@ header {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.studiobutton {
+  color: #2196f3;
 }
 
 .contactsnav {
