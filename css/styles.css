@@ -297,6 +297,10 @@ footer {
   top: 1950px;
   background-color: #2f303a;
 }
+.contacts-link[href*="https://goo.gl/"]
+{
+  color: #ffffff;
+}
 
 .imgfoooter span {
   color: #ffffff;
@@ -319,16 +323,11 @@ footer {
   margin: 60px 215px;
 }
 
-.footer-contacts p {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+footer a:hover {
   color: #ffffff;
 }
 
-footer a:hover {
-  color: #ffffff;
+.contacts-link[href*="https://goo.gl/"]:hover
+{
+  color: #2196f3;
 }
