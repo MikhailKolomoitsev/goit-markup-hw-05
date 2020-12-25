@@ -16,6 +16,14 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --section-team-color: #f5f4fa;
+  --section-offer-color: #2f303a;
+  --fontblue-color: #2196f3;
+  --fontgrey-color: #757575;
+  --font-h-color: #212121;
+}
+
 /* Contacts styles */
 .contacts-link {
   font-family: Roboto;
@@ -24,7 +32,7 @@ a {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--fontgrey-color);
   text-decoration: none;
 }
 
@@ -32,11 +40,11 @@ a {
 p {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.04em;
-  color: #757575;
+  color: var(--fontgrey-color);
 }
 
 h2 {
@@ -48,7 +56,7 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--font-h-color);
 }
 
 .button-fonts {
@@ -89,7 +97,7 @@ header {
   letter-spacing: 0.03em;
 }
 .imgheader span {
-  color: #2196f3;
+  color: var(--fontblue-color);
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -105,8 +113,9 @@ header {
   left: 453px;
   top: 25px;
 }
-.studiobuttonhover:hover {
-  color: #2196f3;
+.studiobuttonhover:hover,
+.studiobuttonhover:focus {
+  color: var(--fontblue-color);
 }
 
 .navbar1 ul {
@@ -123,11 +132,11 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--font-h-color);
 }
 
 .studiobutton {
-  color: #2196f3;
+  color: var(--fontblue-color);
 }
 
 .contactsnav {
@@ -150,7 +159,7 @@ header {
   height: 600px;
   left: 0px;
   top: 80px;
-  background-color: #2f303a;
+  background-color: var(--section-offer-color);
 }
 
 .section-offer h2 {
@@ -175,7 +184,7 @@ header {
   height: 50px;
   left: 700px;
   top: 430px;
-  background: #2196f3;
+  background: var(--fontblue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -206,12 +215,12 @@ header {
 .section-details h2 {
   font-family: Roboto;
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--font-h-color);
   text-align: left;
   padding: 6px;
 }
@@ -238,7 +247,7 @@ header {
 /* Section Team */
 
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--section-team-color);
   position: absolute;
   width: 1600px;
   height: 500px;
@@ -277,7 +286,7 @@ header {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--font-h-color);
 }
 
 .section-team ul li p {
@@ -299,7 +308,7 @@ footer {
   height: 252px;
   left: 0px;
   top: 1950px;
-  background-color: #2f303a;
+  background-color: var(--section-offer-color);
 }
 .contacts-link[href*="https://goo.gl/"]
 {
@@ -321,17 +330,19 @@ footer {
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: var(--fontblue-color);
 }
 .footer-contacts {
   margin: 60px 215px;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
   color: #ffffff;
 }
 
-.contacts-link[href*="https://goo.gl/"]:hover
+.contacts-link[href*="https://goo.gl/"]:hover,
+.contacts-link[href*="https://goo.gl/"]:focus
 {
-  color: #2196f3;
+  color: var(--fontblue-color);
 }
