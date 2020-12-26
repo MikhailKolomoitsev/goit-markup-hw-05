@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
 }
-
+/* Global */
 body {
   font-family: "Roboto", sans-serif;
   color: #333;
@@ -37,27 +37,6 @@ a {
 }
 
 /* TExt and Headers */
-p {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  color: var(--fontgrey-color);
-}
-
-h2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--font-h-color);
-}
 
 .button-fonts {
   font-family: Roboto;
@@ -78,8 +57,6 @@ header {
   height: 80px;
   left: 0px;
   top: 0px;
-
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .imgheader {
