@@ -14,17 +14,15 @@ header {
   top: 0px;
   border: 1px solid #ececec;
 }
-p {
+/* p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-  /* identical to box height, or 187% */
-
   letter-spacing: 0.03em;
   color: var(--fontgrey-color);
-}
+} */
 
 .imgheader {
   position: absolute;
@@ -171,7 +169,7 @@ p {
 .listphotosdiv {
   position: absolute;
   width: 1170px;
-  height: 1360px;
+  height: 1400px;
   top: 50px;
 }
 .listphotos {
@@ -187,22 +185,26 @@ p {
 .pic1 {
   width: 370px;
   height: 404px;
-  margin: 30px;
+  margin: 20px 5px 20px 5px;
   border: 1px solid #eeeeee;
 }
 .picfirst {
   margin-top: 0;
 }
 .pic1 h2 {
+  font-weight: 600;
   margin-top: 20px;
   font-size: 18px;
   line-height: 36px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
+  margin-left: 24px;
 }
 
 .pic1 p {
   letter-spacing: 0.03em;
   line-height: 40px;
+  margin-left: 24px;
+  font-weight: lighter;
 }
 
 /* Footer */

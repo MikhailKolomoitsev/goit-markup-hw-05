@@ -12,8 +12,10 @@ body {
   color: #333;
   line-height: 1.6;
 }
-a {
-  text-decoration: none;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 :root {
@@ -59,7 +61,7 @@ header {
   top: 0px;
 }
 
-.imgheader {
+.img-header {
   position: absolute;
   width: 145px;
   height: 31px;
@@ -72,8 +74,9 @@ header {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
-.imgheader span {
+.img-header span {
   color: var(--fontblue-color);
   font-family: Raleway;
   font-style: normal;
@@ -103,6 +106,7 @@ header {
 }
 
 .navbar1 ul a {
+  text-decoration: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -127,6 +131,11 @@ header {
 }
 .contactsnav a:hover {
   color: #000000;
+}
+
+/* Main */
+.main {
+  margin-bottom: -50px;
 }
 /* Offer section */
 
@@ -212,6 +221,7 @@ header {
   top: 969px;
   margin-bottom: 50px;
   margin-top: 50px;
+  text-align: center;
 }
 .section-whatwedo h2 {
   margin-bottom: 50px;
@@ -231,6 +241,9 @@ header {
   left: 0px;
   top: 1449px;
   justify-content: flex-start;
+}
+.ourteam {
+  text-align: center;
 }
 
 .section-team ul {
@@ -279,7 +292,7 @@ header {
 
 /* Footer */
 
-footer {
+.footer {
   position: absolute;
   width: 1600px;
   height: 252px;
@@ -295,7 +308,9 @@ footer {
 .imgfoooter span {
   color: #ffffff;
 }
-
+.imgfootera {
+  text-decoration: none;
+}
 .imgfoooter a {
   margin-bottom: 20px;
   font-family: Raleway;
@@ -322,4 +337,127 @@ footer a:focus {
 .contacts-link[href*="https://goo.gl/"]:focus
 {
   color: var(--fontblue-color);
+}
+
+/* Styles of portfolio */
+/* Main */
+
+.portfolio {
+  position: absolute;
+  width: 1170px;
+  height: 1360px;
+  padding-top: 110px;
+  left: 215px;
+  top: 120px;
+}
+
+/* Buttons */
+.list-buttons-div {
+  position: absolute;
+  width: 611px;
+  height: 54px;
+  left: 270px;
+  top: 5px;
+}
+
+.list-buttons {
+  display: flex;
+  width: 611px;
+  height: 30px;
+  left: 495px;
+  top: 50px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.buttons,
+.buttonstwo {
+  width: fit-content;
+  height: 38px;
+  margin: 10px;
+  background: var(--fontblue-color);
+  border-radius: 4px;
+  border: none;
+  align-items: center;
+  text-align: justify;
+  white-space: nowrap;
+}
+.buttonstwo {
+  background: var(--section-team-color);
+}
+
+.buttonactive,
+.buttonactivegrey {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 10px 15px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-decoration: none;
+}
+.buttonactivegrey {
+  color: var(--font-h-color);
+}
+
+.examples {
+  display: flex;
+  position: absolute;
+  position: absolute;
+  width: 611px;
+  height: 30px;
+  left: 495px;
+  top: 300px;
+  padding: 10px;
+}
+
+/* Photos list */
+.listphotosdiv {
+  position: absolute;
+  width: 1170px;
+  height: 1400px;
+  top: 50px;
+}
+.listphotos {
+  flex-direction: column;
+  list-style-type: none;
+  position: absolute;
+  top: 50px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+
+.pic1 {
+  width: 370px;
+  height: 404px;
+  margin: 20px 5px 20px 5px;
+  border: 1px solid #eeeeee;
+}
+.picfirst {
+  margin-top: 0;
+}
+.pic1 h2 {
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  margin-left: 24px;
+}
+
+.pic1 p {
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  margin-left: 24px;
+  font-weight: lighter;
+}
+
+/* Footer */
+.foooter-portfolio {
+  left: 0px;
+  top: 1600px;
+  background-color: var(--section-offer-color);
 }
