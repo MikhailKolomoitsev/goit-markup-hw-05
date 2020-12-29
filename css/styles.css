@@ -76,7 +76,7 @@ header {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.img-header span {
+.img-header-span {
   color: var(--fontblue-color);
   font-family: Raleway;
   font-style: normal;
@@ -86,7 +86,7 @@ header {
   letter-spacing: 0.03em;
 }
 
-.navbar1 {
+.navbar-one {
   position: absolute;
   width: 294px;
   height: 16px;
@@ -98,14 +98,14 @@ header {
   color: var(--fontblue-color);
 }
 
-.navbar1 ul {
+.navbar-one-ul {
   text-decoration: none;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
 }
 
-.navbar1 ul a {
+.navbar-one ul a {
   text-decoration: none;
   font-family: Roboto;
   font-style: normal;
@@ -371,7 +371,7 @@ footer a:focus {
 }
 
 .buttons,
-.buttonstwo {
+.buttons-two {
   width: fit-content;
   height: 38px;
   margin: 10px;
@@ -382,12 +382,12 @@ footer a:focus {
   text-align: justify;
   white-space: nowrap;
 }
-.buttonstwo {
+.buttons-two {
   background: var(--section-team-color);
 }
 
-.buttonactive,
-.buttonactivegrey {
+.button-active,
+.button-active-grey {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -398,7 +398,7 @@ footer a:focus {
   color: #ffffff;
   text-decoration: none;
 }
-.buttonactivegrey {
+.button-active-grey {
   color: var(--font-h-color);
 }
 
@@ -414,13 +414,13 @@ footer a:focus {
 }
 
 /* Photos list */
-.listphotosdiv {
+.list-photosdiv {
   position: absolute;
   width: 1170px;
   height: 1400px;
   top: 50px;
 }
-.listphotos {
+.list-photos {
   flex-direction: column;
   list-style-type: none;
   position: absolute;
@@ -439,7 +439,7 @@ footer a:focus {
 .picfirst {
   margin-top: 0;
 }
-.pic1 h2 {
+.pic1-h2 {
   font-weight: 600;
   margin-top: 20px;
   font-size: 18px;
@@ -448,7 +448,7 @@ footer a:focus {
   margin-left: 24px;
 }
 
-.pic1 p {
+.pic1-p {
   letter-spacing: 0.03em;
   line-height: 40px;
   margin-left: 24px;
