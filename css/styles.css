@@ -52,13 +52,13 @@ body {
 }
 
 /* Header */
-
-header {
+.header {
   position: absolute;
   width: 1600px;
   height: 80px;
   left: 0px;
   top: 0px;
+  border: 1px #000000;
 }
 
 .img-header {
@@ -93,8 +93,8 @@ header {
   left: 453px;
   top: 25px;
 }
-.studiobuttonhover:hover,
-.studiobuttonhover:focus {
+.studio-button-hover:hover,
+.studio-button-hover:focus {
   color: var(--fontblue-color);
 }
 
@@ -104,8 +104,9 @@ header {
   display: flex;
   justify-content: space-around;
 }
-
-.navbar-one ul a {
+.studio-button-hover,
+.studiobutton,
+.studio-button-a {
   text-decoration: none;
   font-family: Roboto;
   font-style: normal;
@@ -114,6 +115,7 @@ header {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--font-h-color);
+  text-decoration: none;
 }
 
 .studiobutton {
