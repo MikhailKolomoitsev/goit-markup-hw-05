@@ -58,7 +58,7 @@ body {
   height: 80px;
   left: 0px;
   top: 0px;
-  border: 1px #000000;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .img-header {
@@ -438,7 +438,10 @@ footer a:focus {
   margin: 20px 5px 20px 5px;
   border: 1px solid #eeeeee;
 }
-.picfirst {
+/* .picfirst {
+  margin-top: 0;
+} */
+.pic1:first-child {
   margin-top: 0;
 }
 .pic1-h2 {
