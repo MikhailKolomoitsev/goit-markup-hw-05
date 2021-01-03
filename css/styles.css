@@ -150,7 +150,7 @@ body {
   background-color: var(--section-offer-color);
 }
 
-.section-offer h2 {
+.section-offer-h2 {
   color: #ffffff;
   position: absolute;
   width: 696px;
@@ -186,14 +186,14 @@ body {
   top: 774px;
   margin: 95;
 }
-.section-details ul {
+.section-details-ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   margin: 10px;
 }
 
-.section-details ul li {
+.section-details-li {
   margin: 30px;
 }
 .section-details-ul-li-p {
@@ -235,10 +235,10 @@ body {
   margin-top: 50px;
   text-align: center;
 }
-.section-whatwedo h2 {
+.section-whatwedo-h2 {
   margin-bottom: 50px;
 }
-.section-whatwedo li {
+.section-whatwedo-li {
   margin: 15px 30px;
   display: inline;
 }
@@ -258,7 +258,7 @@ body {
   text-align: center;
 }
 
-.section-team ul {
+.section-team-ul {
   position: absolute;
   width: 1600px;
   height: 400px;
@@ -267,18 +267,18 @@ body {
   margin-top: 35px;
   list-style-type: none;
 }
-.section-team ul li {
+.section-team-ul-li {
   background-color: #ffffff;
   margin: 15px;
   justify-content: center;
 }
-.section-team ul li img {
+.section-team-ul-li-img {
   margin-bottom: 15px;
   width: 270px;
   height: 260px;
 }
 
-.section-team ul li h3 {
+.section-team-ul-li-h3 {
   margin-top: 15px;
   margin: 5px;
   font-family: Roboto;
@@ -291,7 +291,7 @@ body {
   color: var(--font-h-color);
 }
 
-.section-team ul li p {
+.section-team-ul-li-p {
   margin: 15px;
   font-family: Roboto;
   font-style: normal;
@@ -317,7 +317,7 @@ body {
   color: #ffffff;
 }
 
-.imgfoooter span {
+.imgfoooter-span {
   color: #ffffff;
 }
 .imgfootera {
