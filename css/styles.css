@@ -145,7 +145,6 @@ body {
 
 /* Main */
 .main {
-  margin-bottom: -50px;
 }
 /* Offer section */
 
@@ -195,6 +194,7 @@ body {
   height: 251px;
   text-align: center;
   margin: 95px 0 0 0;
+  margin-left: 215px;
 }
 .section-details-ul {
   list-style-type: none;
@@ -236,14 +236,13 @@ body {
 /* What we do */
 
 .section-whatwedo {
-  position: absolute;
   width: 1300px;
   height: 386px;
-  left: 215px;
-  top: 969px;
   margin-bottom: 50px;
   margin-top: 50px;
   text-align: center;
+  margin-left: 215px;
+  margin-bottom: 95px;
 }
 .section-whatwedo-h2 {
   margin-bottom: 50px;
@@ -257,21 +256,19 @@ body {
 
 .section-team {
   background-color: var(--section-team-color);
-  position: absolute;
   width: 1600px;
-  height: 500px;
-  left: 0px;
-  top: 1449px;
+  /* height: 500px; */
   justify-content: flex-start;
+  padding-bottom: 94px;
 }
 .ourteam {
   text-align: center;
+  padding-top: 95px;
 }
 
 .section-team-ul {
-  position: absolute;
   width: 1600px;
-  height: 400px;
+
   display: flex;
   justify-content: center;
   margin-top: 35px;
@@ -315,18 +312,26 @@ body {
 /* Footer */
 
 .footer {
-  position: absolute;
   width: 1600px;
   height: 252px;
-  left: 0px;
-  top: 1950px;
   background-color: var(--section-offer-color);
+}
+
+.footer-contacts-ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.footer-contacts-ul-li {
+  margin-top: 9px;
 }
 .contacts-link[href*="https://goo.gl/"]
 {
   color: #ffffff;
 }
-
+.imgfoooter {
+  padding-left: 20px;
+}
 .imgfoooter-span {
   color: #ffffff;
 }
@@ -347,7 +352,9 @@ body {
   color: var(--fontblue-color);
 }
 .footer-contacts {
-  margin: 60px 215px;
+  width: 1200px;
+  margin: auto;
+  padding-top: 60px;
 }
 
 footer a:hover,
@@ -365,29 +372,22 @@ footer a:focus {
 /* Main */
 
 .portfolio {
-  position: absolute;
-  width: 1170px;
-  height: 1360px;
-  padding-top: 110px;
-  left: 215px;
-  top: 120px;
+  width: 1260px;
+  margin-top: 94px;
+  margin-left: 215px;
 }
 
 /* Buttons */
 .list-buttons-div {
-  position: absolute;
   width: 611px;
   height: 54px;
-  left: 270px;
-  top: 5px;
+  margin-left: 270px;
 }
 
 .list-buttons {
   display: flex;
   width: 611px;
   height: 30px;
-  left: 495px;
-  top: 50px;
   padding: 10px;
   list-style-type: none;
 }
@@ -426,27 +426,19 @@ footer a:focus {
 
 .examples {
   display: flex;
-  position: absolute;
-  position: absolute;
   width: 611px;
   height: 30px;
-  left: 495px;
-  top: 300px;
   padding: 10px;
 }
 
 /* Photos list */
 .list-photosdiv {
-  position: absolute;
   width: 1170px;
   height: 1400px;
-  top: 50px;
 }
 .list-photos {
   flex-direction: column;
   list-style-type: none;
-  position: absolute;
-  top: 50px;
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
