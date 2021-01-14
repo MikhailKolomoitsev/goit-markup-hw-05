@@ -36,9 +36,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--fontgrey-color);
   text-decoration: none;
-  padding: 0 25px;
+  padding: 0 25px 0 25px;
 }
 
+.contacts-link.tel {
+  padding-right: 0;
+}
 /* TExt and Headers */
 
 .button-fonts {
@@ -136,8 +139,9 @@ body {
   justify-content: space-between;
   flex-direction: row;
   margin-top: 30px;
-  margin-left: 300px;
+  margin-left: 270px;
   width: auto;
+  padding-left: 60px;
 }
 .contactsnav a:hover {
   color: #000000;
@@ -372,7 +376,7 @@ footer a:focus {
 /* Main */
 
 .portfolio {
-  width: 1260px;
+  width: 1200px;
   margin-top: 94px;
   margin-left: 215px;
 }
@@ -435,6 +439,7 @@ footer a:focus {
 .list-photosdiv {
   width: 1170px;
   height: 1400px;
+  margin-top: 50px;
 }
 .list-photos {
   flex-direction: column;
