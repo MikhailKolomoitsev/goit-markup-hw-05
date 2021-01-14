@@ -378,6 +378,7 @@ footer a:focus {
   width: 1200px;
   margin-top: 94px;
   margin-left: 215px;
+  margin-bottom: 94px;
 }
 
 /* Buttons */
@@ -450,7 +451,7 @@ footer a:focus {
 .pic1 {
   width: 370px;
   height: 404px;
-  margin: 20px 5px 20px 5px;
+  margin: 30px 7px 0px 8px;
   border: 1px solid #eeeeee;
 }
 /* .picfirst {
