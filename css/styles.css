@@ -63,21 +63,22 @@ body {
 
 .navbar-one {
   display: flex;
-  margin-left: 215px;
+  margin: auto;
   width: 1200px;
 }
 
 .header-nav {
-  margin-top: 32px;
-  margin-left: 94px;
+  padding-top: 32px;
   width: 294px;
+  margin-right: 330px;
   display: inline-block;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .img-header {
-  margin-top: 24px;
+  padding-top: 24px;
+  margin-right: 94px;
   display: inline-block;
   color: #000000;
   font-family: Raleway;
@@ -136,8 +137,7 @@ body {
   display: inline-block;
   justify-content: space-between;
   flex-direction: row;
-  margin-top: 30px;
-  margin-left: 330px;
+  padding-top: 30px;
   width: auto;
 }
 .contactsnav a:hover {
@@ -150,7 +150,6 @@ body {
 /* Offer section */
 
 .section-offer {
-  width: 1600px;
   height: 600px;
   text-align: center;
   justify-content: center;
@@ -158,6 +157,8 @@ body {
   background-color: var(--section-offer-color);
 }
 .section-offer-div {
+  width: 1200px;
+  margin: auto;
   justify-content: center;
   align-items: center;
   padding-top: 200px;
@@ -194,13 +195,17 @@ body {
 .section-details {
   width: 1200px;
   text-align: center;
-  margin: 95px 0 0 215px;
+  padding-top: 95px;
+  margin: auto;
 }
 .section-details-ul {
   list-style-type: none;
   display: flex;
 }
 
+.section-details-li {
+  margin-right: 30px;
+}
 .section-details-ul-li-p {
   width: 270px;
   color: #757575;
@@ -232,24 +237,20 @@ body {
 /* What we do */
 
 .section-whatwedo {
-  width: 1200px;
-  margin-top: 50px;
+  width: 1230px;
+  padding: 50px 5px 94px 5px;
   text-align: center;
-  margin-left: 215px;
-  margin-bottom: 94px;
+  margin: auto;
 }
 .section-whatwedo-h2 {
   margin-bottom: 50px;
 }
 .section-whatwedo-li {
-  margin-top: 15px;
+  margin-right: 30px;
   display: inline;
 }
 .section-whatwedo-list {
   padding: 0;
-}
-.middle {
-  margin: 0 30px 0 30px;
 }
 
 /* Section Team */
@@ -257,26 +258,25 @@ body {
   background-color: var(--section-team-color);
 }
 .section-team-div {
+  margin: auto;
   width: 1200px;
-  justify-content: flex-start;
+  justify-content: center;
   padding-bottom: 94px;
 }
 .ourteam {
   text-align: center;
   padding-top: 95px;
+  margin-bottom: 50px;
 }
 
 .section-team-ul {
-  width: 1600px;
-
   display: flex;
   justify-content: center;
-  margin-top: 35px;
   list-style-type: none;
 }
 .section-team-ul-li {
   background-color: #ffffff;
-  margin: 15px;
+  margin-right: 30px;
   justify-content: center;
 }
 .section-team-ul-li-img {
@@ -317,13 +317,19 @@ body {
   justify-content: flex-start;
 }
 
+.footer-contacts {
+  margin: auto;
+  width: 1200px;
+  padding: 60px 15px 0 15px;
+}
+
 .footer-contacts-ul {
   list-style: none;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .footer-contacts-ul-li {
-  margin-top: 9px;
+  margin-bottom: 9px;
 }
 .contacts-link[href*="https://goo.gl/"]
 {
@@ -331,6 +337,7 @@ body {
 }
 .imgfoooter {
   padding-left: 20px;
+  margin-bottom: 20px;
 }
 .imgfoooter-span {
   color: #ffffff;
@@ -351,11 +358,6 @@ body {
 
   color: var(--fontblue-color);
 }
-.footer-contacts {
-  width: 1200px;
-  margin-left: 215px;
-  padding-top: 60px;
-}
 
 footer a:hover,
 footer a:focus {
@@ -373,22 +375,23 @@ footer a:focus {
 
 .portfolio {
   width: 1200px;
-  margin-top: 94px;
-  margin-left: 215px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  margin: auto;
+  padding-bottom: 94px;
+  justify-content: center;
 }
 
 /* Buttons */
 .list-buttons-div {
-  width: fit-content;
+  width: 1200px;
+  padding: 0 15px 0 300px;
   height: 54px;
-  margin-left: 270px;
+  text-align: center;
 }
 
 .list-buttons {
   display: flex;
   width: 611px;
-  padding: 10px;
   list-style-type: none;
 }
 
@@ -435,7 +438,7 @@ footer a:focus {
 .list-photosdiv {
   width: 1200px;
 
-  padding-top: 50px;
+  padding: 50px 15px 0 15px;
 }
 .list-photos {
   flex-direction: column;
