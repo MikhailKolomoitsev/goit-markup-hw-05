@@ -159,7 +159,6 @@ body {
 /* Offer section */
 
 .section-offer {
-  height: 600px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -169,6 +168,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 200px;
+  padding-bottom: 210px;
 }
 .section-offer-h2 {
   margin: auto;
@@ -277,14 +277,15 @@ body {
   justify-content: center;
 }
 .section-team-ul-li-img {
-  margin-bottom: 15px;
   width: 270px;
   height: 260px;
 }
 
+.team-info {
+  padding: 30px 58px 30px 58px;
+}
 .section-team-ul-li-h3 {
-  margin-top: 15px;
-  margin: 5px;
+  padding-bottom: 10px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -296,20 +297,19 @@ body {
 }
 
 .section-team-ul-li-p {
-  margin: 15px 15px 30px 15px;
+  font-weight: 400;
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--fontgrey-color);
 }
 
 /* Footer */
 
 .footer {
-  height: 252px;
   background-color: var(--section-offer-color);
   justify-content: flex-start;
 }
@@ -374,15 +374,14 @@ footer a:focus {
 
 /* Buttons */
 .list-buttons-div {
-  width: 1200px;
-  padding: 0 15px 0 300px;
-  height: 54px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .list-buttons {
   display: flex;
-  width: 611px;
   list-style-type: none;
 }
 
@@ -433,11 +432,6 @@ footer a:focus {
 }
 
 /* Photos list */
-.list-photosdiv {
-  width: 1200px;
-
-  padding: 50px 15px 0 15px;
-}
 .list-photos {
   flex-direction: column;
   list-style-type: none;
