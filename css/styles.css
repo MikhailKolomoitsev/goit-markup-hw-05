@@ -28,6 +28,7 @@ body {
 
 /* Contacts styles */
 .contacts-link {
+  display: inline-block;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -37,6 +38,7 @@ body {
   color: var(--fontgrey-color);
   text-decoration: none;
   margin: 0 50px 0 0px;
+  padding: 9px 0;
 }
 
 .tel {
@@ -282,7 +284,7 @@ body {
 }
 
 .team-info {
-  padding: 30px 58px 30px 58px;
+  padding: 30px 20px;
 }
 .section-team-ul-li-h3 {
   padding-bottom: 10px;
@@ -324,7 +326,6 @@ body {
 }
 
 .footer-contacts-ul-li {
-  margin-bottom: 9px;
 }
 .contacts-link[href*="https://goo.gl/"]
 {
