@@ -1,6 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -37,12 +34,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--fontgrey-color);
   text-decoration: none;
-  margin: 0 50px 0 0px;
-  padding: 9px 0;
 }
 
-.tel {
-  margin-right: 0;
+.mail {
+  margin-right: 50px;
+}
+
+.tel,
+.mail {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* TExt and Headers */
 
@@ -277,6 +278,9 @@ body {
   background-color: #ffffff;
   margin-right: 30px;
   justify-content: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px 4px 4px 4px;
 }
 .section-team-ul-li-img {
   width: 270px;
@@ -287,7 +291,7 @@ body {
   padding: 30px 20px;
 }
 .section-team-ul-li-h3 {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -319,7 +323,9 @@ body {
 .footer .container {
   padding-top: 60px;
 }
-
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
 .footer-contacts-ul {
   list-style: none;
   /* margin-top: 20px; */
@@ -447,25 +453,24 @@ footer a:focus {
   margin: 30px 7px 0px 8px;
   border: 1px solid #eeeeee;
 }
-/* .picfirst {
-  margin-top: 0;
-} */
+
+.card-info {
+  padding: 16px 24px;
+}
 .pic1:first-child {
   margin-top: 0;
 }
 .pic1-h2 {
   font-weight: 600;
-  margin-top: 20px;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 19px;
   letter-spacing: 0.06em;
-  margin-left: 24px;
+  margin-bottom: 10px;
 }
 
 .pic1-p {
   letter-spacing: 0.03em;
   line-height: 40px;
-  margin-left: 24px;
   font-weight: lighter;
   color: var(--fontgrey-color);
 }

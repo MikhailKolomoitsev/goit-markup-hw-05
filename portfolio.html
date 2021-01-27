@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <!-- <link rel="stylesheet" href="./css/portfolio.css"> -->
 </head>
@@ -38,59 +39,83 @@
     <main>
         <section>
             <div class="portfolio container padding-bottom">
-                <div class="list-buttons-div">
-                    <ul class="list-buttons">
+                    <ul class="list-buttons list-buttons-div">
                         <li><button class="buttons"><a href="#" class="button-active">Все</a> </button></li>
                         <li><button class="buttons-two"><a href="#" class="button-active-grey">Веб-сайты</a> </button></li>
                         <li><button class="buttons-two"><a href="#" class="button-active-grey">Приложения</a> </button></li>
                         <li><button class="buttons-two"><a href="#" class="button-active-grey">Дизайн</a> </button></li>
                         <li><button class="buttons-two"><a href="#" class="button-active-grey">Маркетинг</a> </button></li>
                     </ul>
-                </div>
-                <div class="container">
-                    <ul class="list-photos">
+                    <ul class="list-photos container">
                         <li class="pic1"><img src="./imagesportfolio/img1.png" alt="WebsiteTech" width="370" height="294">
-                            <h2 class="pic1-h2">Технокряк</h2>
+                            <div class="card-info">
+                                <h2 class="pic1-h2">Технокряк</h2>
                             <p class="pic1-p">Веб-сайт</p>
+                            </div>
+                            
                         </li>
                         <li class="pic1"><img src="./imagesportfolio/img2.png" alt="MarketingPrime" width="370" height="294">
-                            <h2 class="pic1-h2">Проект Prime</h2>
-                            <p class="pic1-p">Маркетинг</p>
+                            <div class="card-info">
+                              <h2 class="pic1-h2">Проект Prime</h2>
+                            <p class="pic1-p">Маркетинг</p>  
+                            </div>
+                            
                         </li>
                         <li class="pic1"><img src="./imagesportfolio/img3.png" alt="Design Limeted Edition" width="370" height="294">
+                            <div class="card-info">
                             <h2 class="pic1-h2">Издание Limited Edition</h2>
                             <p class="pic1-p">Дизайн</p>
+                            </div>
+                            
                         </li>
                         <li class="pic1"><img src="./imagesportfolio/img4.png" alt="Design NO vs GS" width="370" height="294">
+                            <div class="card-info">
                             <h2 class="pic1-h2">Постер New Orlean vs Golden Star</h2>
                             <p class="pic1-p">Дизайн</p>
+                            </div>
+                            
                         </li>
                         <li class="pic1"><img src="./imagesportfolio/img5.png" alt="ApplicationIMG" width="370" height="294">
-                            <h2 class="pic1-h2">Проект Boxes</h2>
+                            <div class="card-info">
+                                <h2 class="pic1-h2">Проект Boxes</h2>
                             <p class="pic1-p">Приложение</p>
+                            </div>
+                            
                         </li>
                         <li class="pic1"><img src="./imagesportfolio/img6.png" alt="LAB marketing" width="370" height="294">
-                            <h2 class="pic1-h2">Проект LAB</h2>
+                            <div class="card-info">
+                                 <h2 class="pic1-h2">Проект LAB</h2>
                             <p class="pic1-p">Маркетинг</p>
+                            </div>
+                           
                         </li>
                         <li class="pic1"><img src="./imagesportfolio/img7.png" alt="Application Seafood" width="370" height="294">
-                            <h2 class="pic1-h2">Ресторан Seafood</h2>
+                            <div class="card-info">
+                                <h2 class="pic1-h2">Ресторан Seafood</h2>
                             <p class="pic1-p">Приложение</p>
+                            </div>
+                            
                         </li>
                         <li class="pic1"><img src="./imagesportfolio/img8.png" alt="Web-site Inspiration" width="370" height="294">
-                            <h2 class="pic1-h2">Inspiration has no Borders</h2>
+                            <div class="card-info">
+                                 <h2 class="pic1-h2">Inspiration has no Borders</h2>
                             <p class="pic1-p">Веб-сайт</p>
+                            </div>
+                           
                         </li>
                         <li class="pic1"><img src="./imagesportfolio/img9.png" alt="Application GB" width="370" height="294">
-                            <h2 class="pic1-h2">Growing Business</h2>
+                            <div class="card-info">
+                                <h2 class="pic1-h2">Growing Business</h2>
                             <p class="pic1-p">Приложение</p>
+                            </div>
+                            
                         </li>
                 
                     </ul>
-                </div>
             </div>
         </section>
     </main>
+    <!--Footer -->
     <footer class="footer">
         <div class="container padding-bottom">
             <div class="imgfoooter">
@@ -98,12 +123,12 @@
                     <span class="imgfoooter-span">Web</span>Studio</a>
             </div>
             <ul class="footer-contacts-ul">
-                <li class="footer-contacts-ul-li"><a href="https://goo.gl/maps/annEWMVD85vuUi4b8" class="contacts-link">г.
-                        Киев, пр-т Леси Украинки, 26</a></li>
+                <li class="footer-contacts-ul-li"><a href="https://goo.gl/maps/annEWMVD85vuUi4b8"
+                        class="contacts-link margin-bottom-10">г. Киев, пр-т Леси Украинки, 26</a></li>
                 <li class="footer-contacts-ul-li"><a href="mailto:info@example.com"
-                        class="contacts-link">info@example.com</a></li>
-                <li class="footer-contacts-ul-li"><a href="tel:+38 099 111 11 11" class="contacts-link">+38 099 111 11
-                        11</a></li>
+                        class="contacts-link margin-bottom-10">info@example.com</a></li>
+                <li class="footer-contacts-ul-li"><a href="tel:+38 099 111 11 11"
+                        class="contacts-link margin-bottom-10">+38 099 111 11 11</a></li>
     
             </ul>
         </div>
