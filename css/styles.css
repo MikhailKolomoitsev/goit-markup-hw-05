@@ -16,6 +16,7 @@ body {
 }
 
 :root {
+  --grey-items: #afb1b8;
   --section-team-color: #f5f4fa;
   --section-offer-color: #2f303a;
   --fontblue-color: #2196f3;
@@ -37,7 +38,7 @@ body {
 }
 
 .mail {
-  margin-right: 50px;
+  margin-right: 26px;
 }
 
 .tel,
@@ -70,7 +71,7 @@ body {
 
 .header-nav {
   width: 294px;
-  margin-right: 329px;
+  margin-right: 300px;
 }
 
 .img-header {
@@ -137,8 +138,20 @@ body {
   flex-direction: row;
   width: auto;
 }
-.contactsnav a:hover {
-  color: #000000;
+
+.contactsnav a:focus,
+.contactsnav a:focus .contacts-item-svg,
+.contactsnav a:hover,
+.contactsnav a:hover .contacts-item-svg {
+  color: var(--fontblue-color);
+  fill: var(--fontblue-color);
+}
+
+.contacts-item-svg {
+  margin-right: 6px;
+  width: 16px;
+  height: 12px;
+  fill: var(--fontgrey-color);
 }
 
 /* Main */
@@ -166,6 +179,13 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--section-offer-color);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/offer-section/bg.jpg);
+  background-position: 50% 50%;
 }
 .section-offer-div {
   justify-content: center;
@@ -206,6 +226,21 @@ body {
   text-align: center;
   padding-top: 94px;
 }
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 270px;
+  min-height: 120px;
+  background-color: var(--section-team-color);
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+
 .section-details-ul {
   list-style-type: none;
   display: flex;
@@ -311,8 +346,83 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--fontgrey-color);
+  margin-bottom: 16px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-list-item {
+  display: flex;
+  list-style: none;
+
+  border-radius: 50%;
+}
+
+.social-list-item:hover,
+.social-list-item:focus {
+  background-color: var(--fontblue-color);
+}
+
+.social-list-item:hover .social-list-icon,
+.social-list-item:focus .social-list-icon {
+  fill: #ffffff;
+}
+
+.social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.social-list-icon {
+  fill: var(--grey-items);
+  width: 20px;
+  height: 20px;
+}
+
+/* Section Our Partners */
+.partners-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners-item {
+  border: 1px solid var(--grey-items);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.partners-item:focus,
+.partners-item:hover {
+  border-color: var(--fontblue-color);
+}
+
+.partners-item:focus .partners-list-icon,
+.partners-item:hover .partners-list-icon {
+  fill: var(--fontblue-color);
+}
+
+.partners-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+}
+.partners-item {
+  width: 170px;
+  height: 90px;
+}
+
+.partners-list-icon {
+  fill: var(--grey-items);
+}
 /* Footer */
 
 .footer {
@@ -322,6 +432,10 @@ body {
 
 .footer .container {
   padding-top: 60px;
+  display: flex;
+}
+.left-side {
+  margin-right: 70px;
 }
 .margin-bottom-10 {
   margin-bottom: 10px;
@@ -371,6 +485,54 @@ footer a:focus {
   color: var(--fontblue-color);
 }
 
+.social-list-footer {
+  display: flex;
+}
+
+.social-list-item-footer {
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-item-footer:hover,
+.social-list-item-footer:focus {
+  background-color: var(--fontblue-color);
+}
+
+.social-list-item:hover .social-list-icon,
+.social-list-item:focus .social-list-icon {
+  fill: #ffffff;
+}
+
+.social-list-link-footer {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.social-list-icon-footer {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.title-links-footer {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
 /* Styles of portfolio */
 /* Main */
 
@@ -452,6 +614,13 @@ footer a:focus {
   height: 404px;
   margin: 30px 7px 0px 8px;
   border: 1px solid #eeeeee;
+}
+
+.pic1:focus,
+.pic1:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .card-info {
