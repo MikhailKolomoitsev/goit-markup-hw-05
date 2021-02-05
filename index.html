@@ -49,8 +49,8 @@
         <section class="section-offer background-offer">
             <div class="section-offer-div container padding-bottom">
                     <h2 class="section-offer-h2">Эффективные решения для вашего бизнеса</h2>
-                 <button class="section-offer-button">
-                <a href="./index.html" class="imgfootera">
+                 <button class="section-offer-button" data-modal-open>
+                <a href="#" class="imgfootera">
                     <span class="button-fonts">Заказать услугу</span></a></button>
             </div>
         
@@ -104,9 +104,33 @@
             <div class="section-whatwedo container">
                 <h2 class="title-h2">Чем мы занимаемся</h2>
                 <ul class="section-whatwedo-list">
-                    <li class="section-whatwedo-li "><img src="./images/whatwedo/img1.jpg" alt="" width="370" height="294"></li>
-                    <li class="section-whatwedo-li margin-center"><img src="./images/whatwedo/img2.jpg" alt="" width="370" height="294"></li>
-                    <li class="section-whatwedo-li "><img src="./images/whatwedo/img3.jpg" alt="" width="370" height="294"></li>
+                    <li class="section-whatwedo-li ">
+                        <div class="img-whatwedo">
+                            <img src="./images/whatwedo/img1.jpg" alt="" width="370" height="294">
+                            <div class="info-whatwedo">
+                            <p class="title-links-footer">Десктопные приложения</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="section-whatwedo-li margin-center">
+                        <div class="img-whatwedo">
+                            <img src="./images/whatwedo/img2.jpg" alt="" width="370" height="294">
+                        <div class="info-whatwedo">
+                            <p class="title-links-footer">Мобильные приложения</p>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="section-whatwedo-li ">
+                        <div class="img-whatwedo">
+                            <img src="./images/whatwedo/img3.jpg" alt="" width="370" height="294">
+                        <div class="info-whatwedo">
+                            <p class="title-links-footer">Дизайнерские решения</p>
+                        </div>
+                        </div>
+                    </li>
+                    
+            
+                            
                 </ul>
             </div>
           
@@ -382,4 +406,16 @@
                 </div>
             </div>
         </footer>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="close-btn" type="button" data-modal-close>
+                    <svg class="close-btn-svg">
+                        <use href="./images/sprite.svg#close-btn"></use>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <script src="./js/modal.js"></script>
         </body>
