@@ -3,6 +3,11 @@
   padding: 0;
   margin: 0;
 }
+
+*:focus {
+  outline: none;
+}
+
 /* Global */
 body {
   font-family: "Roboto", sans-serif;
@@ -13,6 +18,10 @@ html,
 body {
   height: 100%;
   margin: 0;
+}
+
+img {
+  display: block;
 }
 
 :root {
@@ -44,6 +53,7 @@ body {
 
 .tel,
 .mail {
+  height: 16px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -76,6 +86,8 @@ body {
 }
 
 .img-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 94px;
   display: inline-block;
   color: #000000;
@@ -114,20 +126,31 @@ body {
   transition: color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.active::after {
+.header-nav-item::after {
   position: absolute;
   background-color: var(--fontblue-color);
   content: " ";
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   height: 4px;
   width: 100%;
   border-radius: 2px;
+  opacity: 0;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active::after {
+  opacity: 1;
 }
 
 .header-nav-item:hover,
 .header-nav-item:focus {
   color: var(--fontblue-color);
+}
+
+.header-nav-item:hover::after,
+.header-nav-item:focus::after {
+  opacity: 1;
 }
 
 .active {
@@ -147,9 +170,10 @@ body {
 }
 
 .contactsnav {
-  display: inline-block;
+  display: flex;
   justify-content: space-between;
   flex-direction: row;
+  list-style: none;
   width: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -194,6 +218,7 @@ body {
 /* Offer section */
 
 .section-offer {
+  padding: 0 15px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -323,14 +348,18 @@ body {
   height: 294px;
 }
 .info-whatwedo {
-  padding-top: 27px;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 0;
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
 }
-
+.info-whatwedo .title-links-footer {
+  margin: 0;
+}
 /* Section Team */
 .section-team {
   background-color: var(--section-team-color);
@@ -402,13 +431,14 @@ body {
 }
 
 .social-list-icon {
-  fill: var(--grey-items);
+  fill: currentColor;
   width: 20px;
   height: 20px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link {
+  color: var(--grey-items);
   display: flex;
   width: 100%;
   height: 100%;
@@ -459,7 +489,7 @@ body {
   width: 170px;
   height: 90px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid var(--fontgrey-color);
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   opacity: 0.9;
 }
@@ -511,6 +541,7 @@ body {
   text-decoration: none;
 }
 .imgfooter {
+  display: block;
   margin-bottom: 20px;
   font-family: Raleway;
   font-style: normal;
@@ -564,6 +595,7 @@ footer a:focus {
 
 .social-list-link-footer {
   display: flex;
+  color: #ffffff;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -572,7 +604,7 @@ footer a:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-icon-footer {
-  fill: #ffffff;
+  fill: currentColor;
   width: 20px;
   height: 20px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -610,8 +642,7 @@ footer a:focus {
   list-style-type: none;
 }
 
-.buttons,
-.buttons-two {
+.buttons {
   width: fit-content;
   height: 38px;
   margin: 10px;
@@ -622,10 +653,14 @@ footer a:focus {
   text-align: justify;
   white-space: nowrap;
 }
-.buttons-two {
-  background: var(--section-team-color);
-}
 
+.grey-button {
+  background-color: var(--section-team-color);
+}
+.button-active {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .button-active,
 .button-active-grey {
   font-family: Roboto;
@@ -637,18 +672,21 @@ footer a:focus {
   letter-spacing: 0.06em;
   color: #ffffff;
   text-decoration: none;
+  border-radius: 4px;
 }
 .button-active-grey {
   color: var(--font-h-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-active-grey:hover,
 .button-active-grey:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
   background: var(--fontblue-color);
-  border-radius: 4px;
 }
 
 .examples {
@@ -670,6 +708,11 @@ footer a:focus {
   position: relative;
   overflow: hidden;
 }
+
+.team-list-img-wrapper img {
+  display: block;
+}
+
 .overlay {
   position: absolute;
   left: 0;
@@ -693,6 +736,7 @@ footer a:focus {
 .link {
   text-decoration: none;
 }
+
 .pic1:hover .overlay,
 .link:focus .overlay {
   transform: translate(0);
@@ -703,6 +747,7 @@ footer a:focus {
   height: 404px;
   margin: 30px 7px 0px 8px;
   border: 1px solid #eeeeee;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pic1:focus,
@@ -750,7 +795,7 @@ footer a:focus {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: background-color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
