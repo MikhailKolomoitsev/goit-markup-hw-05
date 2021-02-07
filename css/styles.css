@@ -4,10 +4,6 @@
   margin: 0;
 }
 
-*:focus {
-  outline: none;
-}
-
 /* Global */
 body {
   font-family: "Roboto", sans-serif;
@@ -704,12 +700,12 @@ footer a:focus {
   -moz-column-count: 3;
   column-count: 3;
 }
-.team-list-img-wrapper {
+.portfolio-list-img-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.team-list-img-wrapper img {
+.portfolio-list-img-wrapper img {
   display: block;
 }
 
@@ -735,6 +731,9 @@ footer a:focus {
 
 .link {
   text-decoration: none;
+  display: block;
+  width: 370px;
+  height: 404px;
 }
 
 .pic1:hover .overlay,
@@ -743,18 +742,24 @@ footer a:focus {
 }
 
 .pic1 {
+  box-sizing: border-box;
   width: 370px;
   height: 404px;
   margin: 30px 7px 0px 8px;
   border: 1px solid #eeeeee;
+
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pic1:focus,
 .pic1:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+}
+
+.link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-info {
