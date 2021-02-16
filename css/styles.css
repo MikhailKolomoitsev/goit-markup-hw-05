@@ -1074,9 +1074,8 @@ footer a:focus {
   align-self: center;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 14px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  font-size: 14px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1091,6 +1090,7 @@ footer a:focus {
 }
 
 .modal-form-btn {
+  margin-top: 30px;
   min-width: 200px;
   min-height: 50px;
   border: none;
